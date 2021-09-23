@@ -37,18 +37,20 @@ class _MyAppState extends State<MyApp> {
     return MaterialApp(
       home: Scaffold(
         backgroundColor: Colors.grey[900],
-        body: Column(
-          // mainAxisAlignment: MainAxisAlignment.center,
-          // crossAxisAlignment: CrossAxisAlignment.center,
-          children: [
-            soundKey(keyColor: Colors.redAccent, fileNumber: 1),
-            soundKey(keyColor: Colors.blueAccent, fileNumber: 2),
-            soundKey(keyColor: Colors.cyanAccent, fileNumber: 3),
-            soundKey(keyColor: Colors.limeAccent, fileNumber: 4),
-            soundKey(keyColor: Colors.pinkAccent, fileNumber: 5),
-            soundKey(keyColor: Colors.tealAccent, fileNumber: 6),
-            soundKey(keyColor: Colors.greenAccent, fileNumber: 7),
-          ],
+        body: SafeArea(
+          child: Column(
+            // mainAxisAlignment: MainAxisAlignment.center,
+            // crossAxisAlignment: CrossAxisAlignment.center,
+            children: [
+              soundKey(keyColor: Colors.redAccent, fileNumber: 1),
+              soundKey(keyColor: Colors.blueAccent, fileNumber: 2),
+              soundKey(keyColor: Colors.cyanAccent, fileNumber: 3),
+              soundKey(keyColor: Colors.limeAccent, fileNumber: 4),
+              soundKey(keyColor: Colors.pinkAccent, fileNumber: 5),
+              soundKey(keyColor: Colors.tealAccent, fileNumber: 6),
+              soundKey(keyColor: Colors.greenAccent, fileNumber: 7),
+            ],
+          ),
         ),
       ),
     );
